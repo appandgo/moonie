@@ -1,0 +1,28 @@
+<div>
+	<div class="row">
+		<div class="col m12" >
+			<h4>Films les plus populaires</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m3" ng-repeat="movie in vm.movies">
+			<div class="card">
+				<div class="card-image">
+					<img ng-src="http://image.tmdb.org/t/p/h632{{movie.poster_path}}" alt="{{movie.original_title}}">
+					<!--<span class="card-title card__title--shadow">{{movie.original_title}}</span>-->
+					<span ng-repeat="movie in vm.oneMovie">{{movie.texte}}</span>
+				</div>
+				<div class="card-content">
+						<div>
+							Note : 
+							<star-rating rating="movie.vote_average"></star-rating>
+							/10 ({{movie.vote_count}} votes)
+						</div>
+				</div>
+				<div class="card-action">
+					<a href="#">Voir plus de détails</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<div>
+<p>{{foo}}</p>
+<h1>Theses are the details of {{vm.movie.original_title}}</h1>
+<table>
+    <tr>
+        <td>Resumé</td>
+        <td>{{vm.movie.overview}}</td>
+    </tr>
+    <tr>
+        <td>Moyenne des votes</td>
+        <td>{{vm.movie.vote_average}}</td>
+    </tr>
+    <tr>
+        <td>Nombre de votes</td>
+        <td>{{vm.movie.vote_count}}</td>
+    </tr>
+    <tr>
+        <td>Budget</td>
+        <td>{{vm.movie.budget}}</td>
+    </tr>    
+    <tr>
+        <td>Jaquette</td>
+        <td><img ng-src="http://image.tmdb.org/t/p/w500/{{vm.movie.poster_path}}" alt=""></td>
+    </tr>
+
+</table>
+
+    
+</div>
