@@ -10,11 +10,15 @@
             controllerAs: 'vm',
             bindToController: true,
             /* jshint unused:false*/
-            controller: function($log, MovieService, $stateParams) {
-                var vm = this;
-                MovieService.getOneMovie($stateParams.id)
-                    .then(function(movie) {
-                        vm.movie = movie;
+            controller: function($log, LatestMoviesService) {
+                console.log('latest Movies in directives :');
+                var vm=this;
+                LatestMoviesService.getMovie()
+                    .then(function(movies) {
+                        console.log('latest Movies in directives :',movies.data);
+                        vm.movies = movies.data;
+                    },function(error){
+                        $log.error('Error', error);
                     })
 
             }            ,
@@ -23,7 +27,7 @@
         };
     }
 
-angular.module('movieLatest', ['services.latest_movies'])
-    .directive('latestMoviesDirective', latestMovies);
+angular.module('latestMovies', ['services.latest_movies'])
+    .directive('latestMovies', latestMovies);
 
 })();

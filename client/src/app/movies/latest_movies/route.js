@@ -7,12 +7,13 @@
             url: '/movies/latest',
             views: {
                 '@': {
-                    template: '',
+                    template: '<latest-movies></latest-movies>',
                 }
             }
         });
     }
 
-    angular.module('movie-latest', [])
+    angular.module('movie-latest', ['latestMovies'/*, 'movie-latest'*/])
     .config(config);
 })();
+
