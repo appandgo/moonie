@@ -13,10 +13,10 @@
       .state('root', {
         views: {
           'header': {
-            template: '<div>Header</div>',
+            template: '<!--<div>Header</div>-->',
           },
           'footer': {
-            template: '<div>Footer</div>',
+            template: '<!--<div>Footer</div>-->',
           }
         }
       });

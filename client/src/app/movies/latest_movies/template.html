@@ -1,13 +1,30 @@
+
+
+
+
 <div>
-	HELLO<h2>These are the latest movies</h2>
-	<ul>
-	    <li data-ng-repeat="movie in ::vm.movies">{{movie.title}}
-	        <img ng-src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="" ui-sref="root.movieDetails({id: movie.id})">
-	    </li>
-	</ul>
-
-	<h2>My favorite movie is </h2>
-	{{vm.myMovie.movie_results[0].original_title}}
-
-	{{  }}
+	<div class="row">
+		<div class="col m12" >
+			<h4>These are the latest movies</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m3" ng-repeat="movie in vm.movies">
+			<div class="card">
+				<div class="card-image">
+					<img ng-src="http://image.tmdb.org/t/p/h632{{movie.poster_path}}" alt="{{movie.original_title}}">
+				</div>
+				<div class="card-content">
+					<div>
+						Note : 
+						<star-rating rating="movie.vote_average"></star-rating>
+						/10 ({{movie.vote_count}} votes)
+					</div>
+				</div>
+				<div class="card-action">
+					<a href="#">Voir plus de détails</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
