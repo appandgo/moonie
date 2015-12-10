@@ -14,9 +14,9 @@
                 console.log('latest Movies in directives :');
                 var vm=this;
                 LatestMoviesService.getMovie()
-                    .then(function(movies) {
-                        console.log('latest Movies in directives :',movies.data);
-                        vm.movies = movies.data;
+                    .then(function(movie) {
+                        console.log('latest Movies in directives :',movie.data);
+                        vm.movies = movie.data;
                     },function(error){
                         $log.error('Error', error);
                     })

@@ -12,8 +12,8 @@
             }
         });
     }
+    angular.module('movie-latest', ['latestMovies'])
 
-    angular.module('movie-latest', ['latestMovies'/*, 'movie-latest'*/])
     .config(config);
 })();
 
