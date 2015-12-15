@@ -43,6 +43,7 @@
       'tvShows',
       'appHeaderComponent',
       'appFooterComponent',
+      'playComponent',
       'common.filters.uppercase',
       'common.interceptors.http',
       'templates'
