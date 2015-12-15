@@ -1,0 +1,24 @@
+//colors
+$greyBody: #202020;
+$blueApp: #32b1e3;
+
+body{
+	background-color: $greyBody;
+	color:white;
+}
+.blueAppColor{
+	color: $blueApp;
+}
+.blueAppBg{
+	background-color: $blueApp;
+}
+
+//components
+#play{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color:$blueApp;
+	color:white;
+	text-align:center;
+}
