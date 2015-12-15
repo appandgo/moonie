@@ -14,14 +14,13 @@
                 var vm=this;
                 MovieService.getMovie()
                     .then(function(movies) {
-                        console.log('Popular Movies :',movies.data.results);
+                        console.log('Movies in directives :',movies.data.results);
                         vm.movies = movies.data.results;
-                    }
-                    );
-                MovieService.getOneMovie()
-                    .then(function(movie) {
-                        vm.myMovie = movie;
-                    })
+
+                    }, function(error){
+                        $log.error('Error here', error);
+                    });
+                
             },
             link: function(scope, elm, attrs){
             }
