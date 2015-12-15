@@ -91,7 +91,37 @@ $color-navbar:#000;
         }
     }
 }
+// ****************************************************************
+// _SEARCH ICONE
+// ****************************************************************
 .search{
     cursor:pointer;
     margin-top:20px;
+}
+// ****************************************************************
+// _BURGER CONTENT
+// ****************************************************************
+.hamb-content{
+    position:fixed;
+    height:100%;
+    width:250px;
+    background:$color-navbar; 
+    top:0;
+    left:0;
+    ul{
+        margin:0;
+        padding:0;
+        margin-top:75px;
+        li{
+            display:block;
+            width:100%;
+            text-align:center;
+            text-transform:uppercase;
+            font-size:1.2em;
+            color:#FFF;
+            cursor:pointer;
+            border-top:1px solid #FFF;
+            border-bottom:1px solid #FFF;
+        }
+    } 
 }
