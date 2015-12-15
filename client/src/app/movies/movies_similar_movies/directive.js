@@ -1,11 +1,11 @@
 (function() {
     'use strict';
 
-    function latestMovies() {
+    function movieSimilar() {
         return {
-            restrict: 'EA',
+            restrict: 'EA', 
             replace: true,
-            templateUrl: './src/app/movies/latest_movies/template.html',
+            templateUrl: './src/app/movies/movies_details/template.html',
             scope: {},
             controllerAs: 'vm',
             bindToController: true,
@@ -16,13 +16,11 @@
                         vm.movie = movie;
                     })
 
-            }            ,
-            link: function(scope, elm, attrs){
-            }
+            }            
         };
     }
 
-angular.module('movieLatest', ['services.latest_movies'])
-    .directive('latestMoviesDirective', latestMovies);
+angular.module('movieSimilarDirective', ['services.movie_similar'])
+    .directive('movieSimilarDirective', movieSimilar);
 
 })();

@@ -44,6 +44,8 @@
       'appHeaderComponent',
       'appFooterComponent',
       'playComponent',
+      'likeComponent',
+      'addComponent',
       'common.filters.uppercase',
       'common.interceptors.http',
       'templates'
