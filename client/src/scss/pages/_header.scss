@@ -1,0 +1,97 @@
+// _COLORS HEADER
+$color-navbar:#000;
+
+// ****************************************************************
+// _NAVBAR MOONIE
+// ****************************************************************
+.nav-moonie{
+    background:$color-navbar;
+}
+// ****************************************************************
+// _STYLES HEADER TITLE
+// ****************************************************************
+.h1{
+    font-family: "nonchalance";
+    display:inline-block;
+    font-size:1.2em;
+    padding:15px 0;
+    margin:0;
+}
+// ****************************************************************
+// _STYLES MENU BURGER
+// ****************************************************************
+.menu-hamb{
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    padding:15px;
+    margin-top:5px;
+    background-color:transparent;
+    border:0px solid #FFF;
+    transition:0.5s;
+    z-index: 9990;
+    &:hover{
+        cursor:pointer;
+
+        span::before{
+            transform:translateY(-10px);
+        }
+        span::after{
+            transform:translateY(10px);
+        }
+    }
+    svg {
+        z-index:1;
+        fill:transparent;
+        stroke-width:1px;
+        stroke:transparent;
+        stroke-dasharray: 120;
+        stroke-dashoffset:120;
+        transition:0.5s;
+    }
+    $size-menu-hamb:23px;
+    span{
+        z-index:2;
+        position:absolute;
+        top:50%;
+        left:50%;
+        display:block;
+        width:$size-menu-hamb;
+        height:2px;
+        background-color:#FFF;
+        border-radius:50px;
+        transform:translateX(-50%) translateY(-50%);
+        transition:all 0.5s ease;
+        &::before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            display:block;
+            width:$size-menu-hamb;
+            height:2px;
+            border-radius:50px;
+            transform:translateY(-8px);
+            background-color:#FFF;
+            transition:0.5s;
+        }
+        &::after{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            display:block;
+            width:$size-menu-hamb;
+            height:2px;
+            border-radius:50px;
+            transform:translateY(8px);
+            background-color:#FFF;
+            transition:0.5s;
+        }
+    }
+}
+.search{
+    cursor:pointer;
+    margin-top:20px;
+}
