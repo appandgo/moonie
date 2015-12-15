@@ -11,8 +11,10 @@
             bindToController: true,
             /* jshint unused:false*/
             controller: function($log) {
+                console.log('directive');
                 var vm=this;
             },
+
             link: function(scope, elm, attrs){
 
             }
