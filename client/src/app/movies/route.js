@@ -12,6 +12,6 @@
         });
     }
 
-    angular.module('movie', ['popularMoviesDirective', 'movie-latest'])
+    angular.module('movie', ['popularMoviesDirective'])
     .config(config);
 })();

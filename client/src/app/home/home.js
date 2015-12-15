@@ -25,7 +25,7 @@
    */
   function HomeCtrl(MovieService) {
     var vm = this;
-    MovieService.getOneMovie(102899);
+   // MovieService.getOneMovie(102899);
   }
 
   angular.module('home', ['services.movie'])
