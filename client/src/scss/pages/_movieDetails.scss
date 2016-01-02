@@ -31,8 +31,10 @@
 			margin-top:20px;
 		}
 	}
+}
 
-	#footer-movie{
+
+.footer-movie{
 		position:fixed;
 		bottom:0;
 		background-color:black;
@@ -42,6 +44,10 @@
 		ul{
 			margin:0px;
 			padding:0px;
+
+			a{
+				color:white;
+			}
 
 			li{
 				display:inline-block;
@@ -53,5 +59,3 @@
 			}
 		}
 	}
-}
-

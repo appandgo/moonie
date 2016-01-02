@@ -1,0 +1,38 @@
+.container-list{
+	
+	margin-left: 30px;
+	margin-right: 30px;
+
+	.list-title{
+
+		color:white;
+		font-size:1.5em;
+
+		.movie-title{
+			color: $blueApp;
+		}
+
+	}
+
+	.box-container{
+		//padding:10px;
+		
+		.box{
+			background-color:black;
+			text-align:center;
+			
+			margin-bottom:20px;
+			padding-top:20px;
+			padding-bottom:30px;
+
+			.genre-title{
+				//margin-top:50px;
+				font-size:1.2em;
+			}
+
+			.more{
+				margin:auto;
+			}
+		}
+	}
+}

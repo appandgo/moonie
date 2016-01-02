@@ -44,11 +44,11 @@
 		</div>
 	</div>
 
-	<div id="footer-movie">
+	<div class="footer-movie">
 		<ul>
-			<li class="active">Infos</li>
+			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li class="active">Infos</li></a>
 			<li>Titres similaires</li>
-			<li>Genres</li>
+			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
 			<li>Critique des utilisateurs</li>
 		</ul>
 	</div>

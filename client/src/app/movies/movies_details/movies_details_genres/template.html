@@ -1,0 +1,30 @@
+<section id="movieGenres">
+	<div class="container-list">
+
+		<p class="list-title">Genres de <span class="movie-title">{{vm.movie.original_title}}</span></p>
+
+		<div id="movie-genre" class="row">
+
+			<div data-ng-repeat="genre in ::vm.movie.genres" class="col s6 m6 l3 box-container">
+
+				<div class="box">
+
+					<p class="genre-title"> {{genre.name}} </p>
+					<more></more>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-movie">
+		<ul>
+			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li>Infos</li></a>
+			<li>Titres similaires</li>
+			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li class="active">Genres</li></a>
+			<li>Critique des utilisateurs</li>
+		</ul>
+	</div>
+
+</section>
