@@ -34,12 +34,6 @@
 				<div id="movie-cast">
 					{{vm.movie.cast}}
 				</div>
-				<div id="movie-genre">
-					genres : 
-					<li data-ng-repeat="genre in ::vm.movie.genres">
-						{{genre.name}}
-					</li>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -47,9 +41,9 @@
 	<div class="footer-movie">
 		<ul>
 			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li class="active">Infos</li></a>
-			<li>Titres similaires</li>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Titres similaires</li></a>
 			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
-			<li>Critique des utilisateurs</li>
+			<!-- <li>Critique des utilisateurs</li> -->
 		</ul>
 	</div>
 </div>

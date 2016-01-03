@@ -21,9 +21,9 @@
 	<div class="footer-movie">
 		<ul>
 			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li>Infos</li></a>
-			<li>Titres similaires</li>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Titres similaires</li></a>
 			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li class="active">Genres</li></a>
-			<li>Critique des utilisateurs</li>
+			<!-- <li>Critique des utilisateurs</li> -->
 		</ul>
 	</div>
 
