@@ -8,7 +8,8 @@
         service.getMovie = function () {
             return $http.get('https://api.themoviedb.org/3/movie/popular',{
                 params:{
-                    api_key: key
+                    api_key: key,
+                    page:23
                 }
             })
             .success(function(data) {

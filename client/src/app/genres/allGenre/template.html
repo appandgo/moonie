@@ -1,0 +1,12 @@
+<div>
+	<div class="row">
+		<div class="col m12" >
+			<h4>All Genres</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m3" ng-repeat="genre in vm.genres">
+				<a ui-sref="root.movieGenre({ id: genre.id, nameGenre: genre.name })"><span >{{genre.name}}</span></a>
+		</div>
+	</div>
+</div>
