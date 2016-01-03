@@ -1,6 +1,5 @@
 <div>
-<p>{{foo}}</p>
-<h1>Theses are the details of {{vm.movie.original_title}}</h1>
+<h1>{{vm.movie.original_title}}</h1>
 <table>
     <tr>
         <td>Resumé</td>
@@ -17,12 +16,13 @@
     <tr>
         <td>Budget</td>
         <td>{{vm.movie.budget}}</td>
-    </tr>    
+    </tr> 
+</table>
+
+<table>
     <tr>
-        <td>Jaquette</td>
         <td><img ng-src="http://image.tmdb.org/t/p/w500/{{vm.movie.poster_path}}" alt=""></td>
     </tr>
-
 </table>
 
     
