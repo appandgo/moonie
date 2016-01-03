@@ -1,3 +1,6 @@
 .card__title--shadow{
     text-shadow: 0px 2px 7px blue;    
 }
+.card-content{
+	color:black;
+}
