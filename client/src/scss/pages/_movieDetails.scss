@@ -5,7 +5,20 @@
 		text-align:center;
 		//background: #CCC;
 		//background-opacity:0.6;
-		opacity:0.6;
+		//opacity:0.6;
+
+		#play{
+			width:60px;
+			height:60px;
+			border-radius:50%;
+			background-color:$blueApp;
+			color:white;
+			text-align:center;
+			padding:10px;
+			font-size:2em;
+			margin:auto;
+			border:none;
+		}
 	}
 
 	#info-container{
@@ -17,6 +30,7 @@
 			h2{
 				margin-top:10px;
 				font-size:1.5em;
+				color:$blueApp;
 			}
 
 			#like{
