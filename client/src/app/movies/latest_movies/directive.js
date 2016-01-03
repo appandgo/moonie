@@ -9,20 +9,24 @@
             scope: {},
             controllerAs: 'vm',
             bindToController: true,
-            controller: function($log, MovieService, $stateParams) {
-                var vm = this;
-                MovieService.getOneMovie($stateParams.id)
+            /* jshint unused:false*/
+            controller: function($log, LatestMoviesService) {
+                console.log('latest Movies in directives :');
+                var vm=this;
+                LatestMoviesService.getMovie()
                     .then(function(movie) {
-                        vm.movie = movie;
+                        console.log('latest Movies in directives :',movie.data);
+                        vm.movies = movie.data;
+                    },function(error){
+                        $log.error('Error', error);
                     })
-
-            }            ,
+            },
             link: function(scope, elm, attrs){
             }
         };
     }
 
-angular.module('movieLatest', ['services.latest_movies'])
-    .directive('latestMoviesDirective', latestMovies);
+angular.module('latestMovies', ['services.latest_movies'])
+    .directive('latestMovies', latestMovies);
 
 })();

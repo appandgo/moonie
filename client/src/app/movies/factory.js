@@ -19,21 +19,6 @@
                 $log.error('Error', error);
             })
         };
-
-        service.getOneMovie = function(movieID){
-            return $http.get('http://api.themoviedb.org/3/movie/' + movieID,{
-                params: {
-                    api_key: key
-                }
-            })
-            .then(function(movieData) {
-                $log.info('Movie Info', movieData.data);
-                return movieData.data;
-            })
-            .catch(function(e){
-                console.log(e);
-            });
-        };
         service.getMovieReviews = function() {
             // console.log('firing', key);
             return $http.get('https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc', {

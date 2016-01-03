@@ -8,9 +8,9 @@
             templateUrl: './src/app/movies/movies_details/movies_details_genres/template.html',
             scope: {},
             controllerAs: 'vm',
-            controller: function($log, MovieService, $stateParams) {
+            controller: function($log, MovieDetailsGenresService, $stateParams) {
                 var vm = this;
-                MovieService.getOneMovie($stateParams.id)
+                MovieDetailsGenresService.getOneMovie($stateParams.id)
                     .then(function(movie) {
                         vm.movie = movie;
                     })
