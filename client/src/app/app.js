@@ -43,6 +43,19 @@
       'movieDetailsDirective',
       'movie-popular',
       'tvShows',
+
+      'movieGenreDirective',
+      'services.oneGenre',
+      'movie-genre',
+
+      'all-genre',
+      'allGenreDirective',
+      'services.genres',
+
+      'services.connexion',
+      'connexion',
+      'connexionDirective',
+
       'appHeaderComponent',
       'appFooterComponent',
       'playComponent',

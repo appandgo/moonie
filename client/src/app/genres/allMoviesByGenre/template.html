@@ -1,7 +1,8 @@
 <div>
 	<div class="row">
 		<div class="col m12" >
-			<h4>Best rated movies</h4>
+			<h4>{{vm.nameGenre}}</h4>
+			<a ui-sref="root.allGenre"><span>Voir tout les genres</span></a>
 		</div>
 	</div>
 	<div class="row">
@@ -9,14 +10,15 @@
 			<div class="card">
 				<div class="card-image">
 					<img ng-src="http://image.tmdb.org/t/p/h632{{movie.poster_path}}" alt="{{movie.original_title}}">
-					<span ng-repeat="movie in vm.oneMovie">{{movie.texte}}</span>
 				</div>
 				<div class="card-content">
-						<div>
-							Note : {{movie.vote_average}} /10
-							<star-rating rating="movie.vote_average"></star-rating>
-							<br>({{movie.vote_count}} votes)
-						</div>
+										<span >{{movie.title}}</span>
+
+					<div>
+						Note : {{movie.vote_average}} /10
+						<star-rating rating="movie.vote_average"></star-rating>
+						<br>({{movie.vote_count}} votes)
+					</div>
 				</div>
 				<div class="card-action">
 					<a ui-sref="root.movieDetails({ id: movie.id })">Voir plus de détails</a>
