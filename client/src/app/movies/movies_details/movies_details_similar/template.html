@@ -1,0 +1,32 @@
+<section id="movieSimilar">
+	<div class="container-list">
+
+		<p class="list-title">Titres similaires à <span class="movie-title">{{vm.movie.original_title}}</span></p>
+
+		<div id="movie-similar" class="row">
+
+			<div data-ng-repeat="movie in vm.movies" class="col s6 m6 l3 box-container">
+
+				<div class="box" style="background-image : url(http://image.tmdb.org/t/p/w500/{{movie.poster_path}});">
+
+					<p class="genre-title"> {{movie.original_title}} </p>
+					<div class="row">
+						<play class="s6 right-align btn-rond"></play>
+						<a ui-sref="root.movieDetails({ id: movie.id })"><more class="s6 left-align"></more></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-movie">
+		<ul>
+			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li>Infos</li></a>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li class="active">Titres similaires</li></a>
+			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
+			<!-- <li>Critique des utilisateurs</li> -->
+		</ul>
+	</div>
+
+</section>

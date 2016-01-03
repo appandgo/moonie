@@ -1,3 +1,75 @@
-#header-player{
-	padding:20% 0px;
+#movieDetails {
+	
+	#header-player{
+		padding:10% 0px;
+		text-align:center;
+		//background: #CCC;
+		//background-opacity:0.6;
+		//opacity:0.6;
+
+		#play{
+			width:60px;
+			height:60px;
+			border-radius:50%;
+			background-color:$blueApp;
+			color:white;
+			text-align:center;
+			padding:10px;
+			font-size:2em;
+			margin:auto;
+			border:none;
+		}
+	}
+
+	#info-container{
+
+		.row.title{
+			margin-top:20px;
+			margin-bottom:0px !important;
+
+			h2{
+				margin-top:10px;
+				font-size:1.5em;
+				color:$blueApp;
+			}
+
+			#like{
+				float:right;
+			}
+			#add{
+				float:left;
+			}
+		}
+
+		#movie-overview{
+			margin-top:20px;
+		}
+	}
 }
+
+
+.footer-movie{
+		position:fixed;
+		bottom:0;
+		background-color:black;
+		width:100%;
+		text-align:center;
+
+		ul{
+			margin:0px;
+			padding:0px;
+
+			a{
+				color:white;
+			}
+
+			li{
+				display:inline-block;
+				padding:15px 0px;
+				margin:0px 25px;
+			}
+			li.active, li:hover{
+				border-top:2px solid $blueApp;
+			}
+		}
+	}
