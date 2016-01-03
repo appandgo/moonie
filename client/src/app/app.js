@@ -52,6 +52,10 @@
       'allGenreDirective',
       'services.genres',
 
+      'services.connexion',
+      'connexion',
+      'connexionDirective',
+
       'appHeaderComponent',
       'appFooterComponent',
       'playComponent',
