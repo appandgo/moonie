@@ -13,13 +13,13 @@
 				</div>
 				<div class="card-content">
 						<div>
-							Note : {{show.vote_average}} /10
+							Note : {{movie.vote_average}} /10
 							<star-rating rating="movie.vote_average"></star-rating>
 							<br>({{movie.vote_count}} votes)
 						</div>
 				</div>
 				<div class="card-action">
-					<a href="#">Voir plus de détails</a>
+					<a ui-sref="root.movieDetails({ id: movie.id })">Voir plus de détails</a>
 				</div>
 			</div>
 		</div>
