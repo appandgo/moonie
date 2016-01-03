@@ -7,7 +7,7 @@
             url: '/movie/details/:id',
             views: {
                 '@': {
-                    template: '<h1>details</h1><movie-details-directive></movie-details-directive>',
+                    template: '<h1>Details</h1><movie-details-directive></movie-details-directive>',
                 }
             }
         });
