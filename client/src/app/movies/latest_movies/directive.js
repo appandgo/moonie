@@ -20,8 +20,7 @@
                     },function(error){
                         $log.error('Error', error);
                     })
-
-            }            ,
+            },
             link: function(scope, elm, attrs){
             }
         };
