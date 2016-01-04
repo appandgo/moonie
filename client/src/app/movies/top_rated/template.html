@@ -1,6 +1,48 @@
 <div>
-    <h1>These are the best rated movies :</h1>
-    <ul>
-        <li data-ng-repeat="movie in ::vm.movies">{{movie.original_title}}</li>
-    </ul>
+	<div class="container-list">
+	<div class="row">
+		<div class="col m12" >
+			<h4>Best rated movies</h4>
+		</div>
+	</div>
+
+	<div id="movie-best-rated" class="row">
+
+			<div data-ng-repeat="movie in vm.movies" class="col s6 m6 l3 box-container">
+				<div class="box" style="background-image : url(http://image.tmdb.org/t/p/w500/{{movie.backdrop_path}});">
+					<p class="genre-title"> {{movie.original_title}} </p>
+					<div class="row">
+						<play class="s6 right-align btn-rond"></play>
+						<a ui-sref="root.movieDetails({ id: movie.id })"><more class="s6 left-align"></more></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- <div class="row">
+		<div class="col s12 m3" ng-repeat="movie in vm.movies">
+			<div class="card">
+				<div class="card-image">
+					<img ng-src="http://image.tmdb.org/t/p/h632{{movie.poster_path}}" alt="{{movie.original_title}}">
+					<span ng-repeat="movie in vm.oneMovie">{{movie.texte}}</span>
+				</div>
+				<div class="card-content">
+						<div>
+							Note : {{show.vote_average}} /10
+							<star-rating rating="movie.vote_average"></star-rating>
+							<br>({{movie.vote_count}} votes)
+						</div>
+				</div>
+				<div class="card-action">
+					<a href="#">Voir plus de détails</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
 </div>
+
+
+

@@ -2,10 +2,14 @@
 @import "pages/common";
 
 //components
-@import "componentsApp/play";
+//@import "componentsApp/play";
 
 //pages
-@import "pages/movieDetails",
-    "pages/header";
+@import "pages/movieDetails";
+@import "pages/movieDetails";
+@import "pages/movieGenres";
+@import "pages/movieSimilar";
+@import "pages/actors";
+@import "pages/header";
 
 

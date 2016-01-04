@@ -1,7 +1,7 @@
 (function(){
     'use strict'
 
-    function MovieService($http,$log){
+    function PopularMovieService($http,$log){
         var service = {};
         service.movie = [];
         var key = 'd07241f7f943c6861fa0a520b52cc049';
@@ -39,6 +39,6 @@
     }
 
 angular.module('services.movie', [])
-    .factory('MovieService', MovieService);
+    .factory('PopularMovieService', PopularMovieService);
 })()
 
