@@ -10,7 +10,7 @@
             controllerAs: 'vm',
             bindToController: true,
             /* jshint unused:false*/
-            controller: function(,$scope,$log, connexionService) {
+            controller: function($scope,$log, connexionService) {
                 var vm=this;
                
                 connexionService.getToken()

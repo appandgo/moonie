@@ -1,4 +1,5 @@
 <div>
+  <div class="container-list">
   <div class="row">
     <div class="col m12" >
       <h4>Most popular TV Shows</h4>
@@ -9,6 +10,7 @@
       </select>
     </div>
   </div>
+
   <div class="row">
     <div class="col s12 m3" ng-repeat="show in vm.popularTvShows ">
       <div class="card">
@@ -16,7 +18,7 @@
           <img ng-src="http://image.tmdb.org/t/p/w500{{show.backdrop_path}}">
           <span class="card-title card__title--shadow">{{show.name}}</span>
         </div>
-        <div class="card-content">
+        <!-- <div class="card-content">
             <div>
             Note :
             {{show.vote_average}} /10
@@ -24,11 +26,15 @@
              <br>({{show.vote_count}} votes)
             </div>
             <p>Popularité: {{ show.popularity }}</p>
-        </div>
-        <div class="card-action">
+        </div> -->
+        <!-- <div class="card-action">
           <a href="#">Voir plus de détails</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+
+
+
+</div>
 </div>

@@ -1,29 +1,52 @@
-<div>
-<h1>{{vm.movie.original_title}}</h1>
-<table>
-    <tr>
-        <td>Resumé</td>
-        <td>{{vm.movie.overview}}</td>
-    </tr>
-    <tr>
-        <td>Moyenne des votes</td>
-        <td>{{vm.movie.vote_average}}</td>
-    </tr>
-    <tr>
-        <td>Nombre de votes</td>
-        <td>{{vm.movie.vote_count}}</td>
-    </tr>
-    <tr>
-        <td>Budget</td>
-        <td>{{vm.movie.budget}}</td>
-    </tr> 
-</table>
 
-<table>
-    <tr>
-        <td><img ng-src="http://image.tmdb.org/t/p/w500/{{vm.movie.poster_path}}" alt=""></td>
-    </tr>
-</table>
+<div id="movieDetails">
 
-    
+	<div id="header-player" style="background-image : url(http://image.tmdb.org/t/p/w500/{{vm.movie.poster_path}});">
+		<div class="center-align">
+			<play></play>
+		</div>
+	</div>
+
+	<div id="info-container" class="container">
+		<div class="row title">
+			<div class="col s10">
+				<h2 class="movie-title">{{vm.movie.original_title}}</h2>
+			</div>
+			<div class="col s1 btn-container right-align">
+				<like></like>
+			</div>
+			<div class="col s1 btn-container left-align">
+				<add></add>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s8">
+				<div>
+					<i class="fa fa-calendar-o blueAppColor"></i>
+					<span>{{vm.movie.release_date}}</span>
+				</div>
+				<div>
+					<i class="fa fa-star blueAppColor"></i>
+					<span>{{vm.movie.vote_average}}/10</span>
+				</div>
+				<div id="movie-overview">
+					{{vm.movie.overview}}
+				</div>
+				<div id="movie-cast">
+					{{vm.movie.cast}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-movie">
+		<ul>
+			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li class="active">Infos</li></a>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Titres similaires</li></a>
+			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
+			<!-- <li>Critique des utilisateurs</li> -->
+		</ul>
+	</div>
 </div>
+
