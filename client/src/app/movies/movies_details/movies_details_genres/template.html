@@ -1,7 +1,7 @@
 <section id="movieGenres">
 	<div class="container-list">
 
-		<p class="list-title">Genres de <span class="movie-title">{{vm.movie.original_title}}</span></p>
+		<p class="list-title">Genres of <span class="movie-title">{{vm.movie.original_title}}</span></p>
 
 		<div id="movie-genre" class="row">
 
@@ -21,9 +21,9 @@
 	<div class="footer-movie">
 		<ul>
 			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li>Infos</li></a>
-			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Titres similaires</li></a>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Similar Movies</li></a>
 			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li class="active">Genres</li></a>
-			<!-- <li>Critique des utilisateurs</li> -->
+			<a ui-sref="root.movieDetailsCredits({ id: vm.movie.id })"><li>Casting</li></a>
 		</ul>
 	</div>
 
