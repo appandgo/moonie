@@ -44,12 +44,14 @@
       'topRatedMoviesDirective',
       'popularMoviesDirective',
       'popularActorsDirective',
+
       'movieDetailsDirective',
       'actorDetailsDirective',
       'movieDetailsGenresDirective',
       'movieDetailsSimilarDirective',
       'movie-popular',
       'actor-popular',
+      
       'tvShows',
 
       'movieGenreDirective',

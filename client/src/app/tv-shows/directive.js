@@ -5,7 +5,7 @@
         return {
             restrict: 'EA',
             replace: true,
-            templateUrl: './src/app/tv-shows/template.html',
+            templateUrl: 'src/app/tv-shows/template.html',
             scope: {},
             controllerAs: 'vm',
             bindToController: true,
