@@ -1,6 +1,18 @@
-#actor-popular{
-	img{
-		padding-right:0px !important;
-		padding-left:0px !important;
+#actorDetails{
+	margin-top:50px;
+
+	.info{
+
+		h2{
+			font-size:2.3em;
+			color:$blueApp;
+		}
+
+		.bio{
+			margin-top:30px;
+			padding:0px;
+			//paddin-right:30px;
+			text-align:justify;
+		}
 	}
 }

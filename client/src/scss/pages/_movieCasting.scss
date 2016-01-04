@@ -1,0 +1,50 @@
+.box-actor{
+	height:400px;
+	//background-image:cover;
+
+	.row{
+		margin-bottom:0px;
+		
+		img{
+			padding-right:0px !important;
+			padding-left:0px !important;
+		}
+	}
+
+	
+
+	.legende{
+		text-align:center;
+		margin-top:5px;
+
+		p, .more{
+			display:inline-block;
+		}
+
+		.genre-title{
+			color:white;
+		}
+
+		.btn-rond{
+			margin-left:5px;
+
+			
+			    width: 25px;
+			    height: 25px;
+			    border-radius: 50%;
+			    color: white;
+			    text-align: center;
+			    padding: 2px;
+			    font-size: 0.8em;
+			    border: 2px solid white;
+			
+		}
+
+		.btn-rond:hover{
+			border: 2px solid $blueApp;
+			color: $blueApp;
+		}
+
+	}
+
+}
