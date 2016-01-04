@@ -1,14 +1,14 @@
 (function(){
     'use strict'
 
-    function PopularMovieService($http,$log,API){
+    function PopularMovieService($http,$log){
         var service = {};
         service.movie = [];
+        var key = 'd07241f7f943c6861fa0a520b52cc049';
         service.getMovie = function () {
             return $http.get('https://api.themoviedb.org/3/movie/popular',{
                 params:{
-                    api_key: API.API_KEY,
-                    page:23
+                    api_key: key
                 }
             })
             .success(function(data) {
@@ -23,7 +23,7 @@
             // console.log('firing', key);
             return $http.get('https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc', {
                 params:{
-                    api_key: API.API_KEY,
+                    api_key: key
                 }                
             })
             .then(function(movieData) {

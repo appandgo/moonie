@@ -8,19 +8,10 @@
             views: {
                 '@': {
                     template: '<popular-tv-shows-directive></popular-tv-shows-directive>',
-                    controller: function(TVgenres){
-                        console.log(TVgenres);
-                    }
+    
                 }
             },
-            resolve:{
-                TVgenres : function(tvShowsService) {
-                    tvShowsService.getTVGenres()
-                    .then(function(result) {
-                        return result;
-                    })
-                }
-            },            
+           
         });
     }
 

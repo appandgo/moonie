@@ -51,5 +51,8 @@
   },
   "scripts": {
     "test": "gulp travis"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
   }
 }

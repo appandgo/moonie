@@ -1,0 +1,32 @@
+<div>
+	<div class="container-list">
+		
+		<div class="row">
+			<div class="col m12" >
+				<h4>Actors</h4>
+			</div>
+		</div>
+
+		<div id="actor-popular" class="row">
+
+			<div data-ng-repeat="actor in vm.actors" class="col s6 m3 l2">
+				<div class="box">
+				<!-- <div class="box" style="background-image : url(http://image.tmdb.org/t/p/w500/{{actor.profile_path}});"> -->
+
+					<img src="http://image.tmdb.org/t/p/w500/{{actor.profile_path}}" class="col s12">
+
+					<div class="legende">
+						<p class="genre-title"> {{actor.name}} </p>
+						<div class="row">
+							<!-- <play class="s6 right-align btn-rond"></play> -->
+							<a ui-sref="root.actorDetails({ id: actor.id })"><more class="s6 left-align"></more></a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</div>
