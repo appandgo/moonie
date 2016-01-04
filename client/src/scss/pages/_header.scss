@@ -27,15 +27,19 @@ $color-navbar:#000;
 
 
 .header-img{
-    background:#FFF;
-    color:#000;
+    background:transparent;
+    color:#FFF;
     padding:40px;
-}
-
-.home-detail-movie{
-    padding:20px;
-    padding-left:40px;
+    padding-left:100px;
+    display:block;
+    position:fixed;
+    height:100%;
+    background-size:100%;
     h2{
-        font-size:1.5em;
+        font-size:3em;
+    }
+    .text{
+        width:35%;
+        font-size:1.2em;
     }
 }

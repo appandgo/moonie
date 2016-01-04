@@ -2,29 +2,10 @@
 
 
 
-<div>
-	<div class="row">
-		<div class="col m12" >
-			<h4>This is the latest movie</h4>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col2 s10 m10" >
-			<div class="card">
-				<div class="card-image">
-					<img ng-src="http://image.tmdb.org/t/p/h632{{vm.movies.poster_path}}" alt="{{vm.movies.original_title}}">
-				</div>
-				<div class="card-content">
-					<div>
-						Note : {{show.vote_average}} /10 
-						<star-rating rating="vm.movies.vote_average"></star-rating>
-						<br>({{movie.vote_count}} votes)
-					</div>
-				</div>
-				<div class="card-action">
-					<a href="#">Voir plus de détails</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="header-img" style="background-image : url(http://image.tmdb.org/t/p/w500/{{vm.movies.backdrop_path}});">
+<h2 class="blueAppColor">{{vm.movies.original_title}}</h2>
+<p class="text">{{ vm.movies.overview }}
+<br/>
+<i class="fa fa-star blueAppColor"></i> {{ vm.movies.vote_average + '/10'}}
+</p>
 </div>
