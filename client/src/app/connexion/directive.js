@@ -10,32 +10,35 @@
             controllerAs: 'vm',
             bindToController: true,
             /* jshint unused:false*/
-            controller: function($log, connexionService) {
+            controller: function(,$scope,$log, connexionService) {
                 var vm=this;
-                /*
+               
                 connexionService.getToken()
                     .then(function(token) {
                         console.log('tokennnn :',token.data.request_token);
                         vm.token = token.data.request_token;
+                        $scope.token=vm.token;
                     }, function(error){
                         $log.error('Error token', error);
                     });
-                
-                connexionService.connexion("f901000ab29a311f071f23b7c96fb3df0a333bd7")
+
+                connexionService.connexion($scope.token)
                     .then(function(connexion) {
                         console.log('connexion :',connexion);
                     }, function(error){
                         $log.error('Error connexion', error);
                     });
                 
-
-                connexionService.getSession("f901000ab29a311f071f23b7c96fb3df0a333bd7")
+                connexionService.getSession($scope.token)
                     .then(function(sessionId) {
                             console.log('sessionId :',sessionId);
                             vm.sessionId = sessionId.data;
                         }, function(error){
                             $log.error('Error token', error);
                         });
+
+                /*
+                    7dddd6bf2eb3fcecaac231792478b431e7d8b447
                 */
 
             },

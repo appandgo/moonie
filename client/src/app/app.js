@@ -65,6 +65,10 @@
     ])
     .config(config)
     .run(run)
+    .constant("API", {
+      "URL": "http://jmarket.jardiland.com/api/api.php",
+      "API_KEY": "d07241f7f943c6861fa0a520b52cc049",
+    })
     .controller('MainCtrl', MainCtrl)
     .value('version', '1.1.0');
 })();
