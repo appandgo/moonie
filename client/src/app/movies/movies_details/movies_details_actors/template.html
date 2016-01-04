@@ -1,0 +1,33 @@
+<section id="movieCredits">
+	<div class="container-list">
+
+		<p class="list-title">Casting of <span class="movie-title">{{vm.movie.original_title}}</span></p>
+
+		<div id="movie-credits" class="row">
+
+			<div data-ng-repeat="actor in vm.actors" class="col s6 m3 l2">
+				<div class="box-actor">
+				<!-- <div class="box-actor" style="background-image : url(http://image.tmdb.org/t/p/w500/{{actor.profile_path}});"> -->
+					<div class="row"><img src="http://image.tmdb.org/t/p/w500/{{actor.profile_path}}" class="col s12"></div>
+					
+					<div class="legende row">
+						
+						<a ui-sref="root.actorDetails({ id: actor.id })"><p class="genre-title"> {{actor.name}} </p><more class="s6 left-align"></more></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div class="footer-movie">
+		<ul>
+			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li>Infos</li></a>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Similar Movies</li></a>
+			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
+			<a ui-sref="root.movieDetailsCredits({ id: vm.movie.id })"><li class="active">Casting</li></a>
+		</ul>
+	</div>
+
+</section>

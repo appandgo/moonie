@@ -1,14 +1,18 @@
 <div id="actorDetails">
-
+ 
 	<div class="info row">
-		<div class="col s3">
+		<div class="col s12 m4 l3">
 			<img src="http://image.tmdb.org/t/p/w500/{{vm.actor.profile_path}}" class="col s12">
 		</div>
-		<div class="col s9">
+		<div class="col s12 m8 l9">
 			<h2>{{vm.actor.name}}</h2>
+
 			<div>birthday : <span>{{vm.actor.birthday}}</span></div>
 			<div>place of birth : <span>{{vm.actor.place_of_birth}}</span></div>
-			<div>{{vm.actor.biography}}</div>
+
+			<div class="row">
+				<div class="bio col s12 l9">{{vm.actor.biography}}</div>
+			</div>
 		</div>
 
 	</div>

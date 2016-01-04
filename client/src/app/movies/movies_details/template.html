@@ -32,6 +32,17 @@
 				<div id="movie-overview">
 					{{vm.movie.overview}}
 				</div>
+
+
+				<div data-ng-repeat="credits in ::vm.movieCredits" class="col s6 m6 l3 box-container">
+				<div class="box">
+					<p class="genre-title"> {{credits.name}} </p>
+					<more></more>
+				</div>
+			</div>
+
+
+
 				<div id="movie-cast">
 					{{vm.movie.cast}}
 				</div>
@@ -42,9 +53,9 @@
 	<div class="footer-movie">
 		<ul>
 			<a ui-sref="root.movieDetails({ id: vm.movie.id })"><li class="active">Infos</li></a>
-			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Titres similaires</li></a>
+			<a ui-sref="root.movieDetailsSimilar({ id: vm.movie.id })"><li>Similar Movies</li></a>
 			<a ui-sref="root.movieDetailsGenres({ id: vm.movie.id })"><li>Genres</li></a>
-			<!-- <li>Critique des utilisateurs</li> -->
+			<a ui-sref="root.movieDetailsCredits({ id: vm.movie.id })"><li>Casting</li></a>
 		</ul>
 	</div>
 </div>
