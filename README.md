@@ -71,18 +71,22 @@ scss/
 ├── main.scss
 ├── _materialize.scss
 ├── pages
-│   ├── _acthor.scss
-│   ├── _header.scss
-│   ├── _movieCasting.scss
-│   ├── _movieDetails.scss
-│   ├── _movieGenres.scss
-│   ├── _movieSimilar.scss
-│   └── _common.scss
-├── components
-│   ├── _buttons.scss
-│   ├── _cards.scss
-│   └── ...
-└── page
+│   ├── _acthor.scss
+│   ├── _header.scss
+│   ├── _movieCasting.scss
+│   ├── _movieDetails.scss
+│   ├── _movieGenres.scss
+│   ├── _movieSimilar.scss
+│   └── _common.scss
+├── componentsApp
+│   └── _play.scss
+└── components
+    ├── _buttons.scss
+    ├── _cards.scss
+    ├── _chips.scss
+    ├── _collapsible.scss
+    ├── _color.scss
+    └── ...
 ```
 ### License
 
