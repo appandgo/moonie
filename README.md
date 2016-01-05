@@ -84,7 +84,6 @@ scss/
     ├── _buttons.scss
     ├── _cards.scss
     └── ...
-page
 ```
 ### License
 
