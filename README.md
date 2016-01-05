@@ -1,4 +1,6 @@
-# sub2webAngular
+Moonie project
+by Brian Soufir, Xavier Requillart, Léa Livran
+
 
 ### Getting started
 
@@ -24,15 +26,18 @@ This task will lint your code, optimize css js and images files, run unit tests.
 
 ### Features
 
-* 5 simple task: `gulp serve`,`gulp serve:dist`, `gulp serve:tdd`, `gulp test:unit`, `gulp test:e2e`
-* JavaScript file continuous linting with `jshint`.
-* SASS continuous compiling.
-* `Unit` and `e2e` testing support. (for `e2e` testing you need to have a java runtine installed, take a look at [selenium JavaScript api ](http://selenium.googlecode.com/git/docs/api/javascript/index.html) and [protractor](https://github.com/angular/protractor) for more informations.
-* HTML templates converted into strings and attached to a single javascript file (to avoid one http call for each template).
-* Livereload provided by [browsersync](http://www.browsersync.io/).
-* angular module dependencies automatically injected using [ng-annotate](https://github.com/olov/ng-annotate).
-* Static resources minification and optimization for production.
-* sourcemaps generated and embedded in JavaScript and css files during the production optimization.
+* displaying the latest movie
+* displaying a list of the popular Movies
+* displaying a list of the best rated Movies
+* displaying a list of the popular TV Shows
+* displaying a list of the popular Actors
+* displaying a list of the Genres
+* displaying a list of the Movies by Genres
+* displaying the infos of a specific actor
+* displaying the infos of a specific movie
+* displaying a list of the similar movies for a specific movie
+* displaying a list of the genres of a specific movie
+* displaying a list of the cast of a specific movie
 
 ### Directory Structure
 
