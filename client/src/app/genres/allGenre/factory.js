@@ -1,10 +1,10 @@
 (function(){
     'use strict'
 
-    function allGenreService($http,$log){
+    function allGenreService($http,$log,API){
         var service = {};
         service.movie = [];
-        var key = 'd07241f7f943c6861fa0a520b52cc049';
+        var key = API.KEY;
         service.getGenre = function () {
             return $http.get('http://api.themoviedb.org/3/genre/movie/list',{
                 params:{

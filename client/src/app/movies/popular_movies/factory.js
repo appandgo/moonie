@@ -1,10 +1,10 @@
 (function(){
     'use strict'
 
-    function PopularMovieService($http,$log){
+    function PopularMovieService($http,$log,API){
         var service = {};
         service.movie = [];
-        var key = 'd07241f7f943c6861fa0a520b52cc049';
+        var key = API.KEY;
         service.getMovie = function () {
             return $http.get('https://api.themoviedb.org/3/movie/popular',{
                 params:{

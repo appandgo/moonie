@@ -1,9 +1,9 @@
 (function(){
     'use strict'
 
-    function ActorDetailsService($http,$log){
+    function ActorDetailsService($http,$log,API){
         var service = {};
-        var key = 'd07241f7f943c6861fa0a520b52cc049';
+        var key = API.KEY;
 
 
         service.getOneActor = function(actorID){

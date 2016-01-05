@@ -1,9 +1,9 @@
 (function(){
     'use strict'
 
-    function tvShows($http,$log){
+    function tvShows($http,$log,API){
         var service = {};
-        var key = 'd07241f7f943c6861fa0a520b52cc049';
+        var key = API.KEY;
         var BASE_URL = 'http://api.themoviedb.org/3';
 
         service.getPopularTvShows = function() {

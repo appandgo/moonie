@@ -1,10 +1,10 @@
 (function(){
     'use strict'
 
-    function MovieDetailsCreditsService($http,$log){
+    function MovieDetailsCreditsService($http,$log,API){
         var service = {};
         service.actor = [];
-        var key = 'd07241f7f943c6861fa0a520b52cc049';
+        var key = API.KEY;
 
 
         service.getActor = function (actorID) {

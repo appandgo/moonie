@@ -71,6 +71,11 @@
     ])
     .config(config)
     .run(run)
+    .constant('API', {
+      'URL' : "",
+      'KEY' : "4295853c9d4f3674b4ed65459595b15f"
+    })
+
     .controller('MainCtrl', MainCtrl)
     .value('version', '1.1.0');
 })();
