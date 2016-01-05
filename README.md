@@ -65,6 +65,26 @@ A code coverage report will be available inside the `client/test/unit-results`.
 * **gulp test:e2e** - Run end-to-end tests inside the `client/test/e2e` folder with `protractor`. If a test fails, you should find a screenshot of the page inside the `client/test/screenshots` folder.
 **Note that you need to have the application running in order to run e2e tests. You can launch this task from another terminal instance.**
 
+### SCSS
+```
+scss/
+├── main.scss
+├── _materialize.scss
+├── pages
+│   ├── _acthor.scss
+│   ├── _header.scss
+│   ├── _movieCasting.scss
+│   ├── _movieDetails.scss
+│   ├── _movieGenres.scss
+│   ├── _movieSimilar.scss
+│   └── _common.scss
+├── componentsApp
+│   └── _play.scss
+├── components
+│   ├── _buttons.scss
+│   ├── _cards.scss
+│   └── ...
+└── page
 ### License
 
 See LICENSE file
