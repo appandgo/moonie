@@ -83,6 +83,9 @@ scss/
 └── components
     ├── _buttons.scss
     ├── _cards.scss
+    ├── _chips.scss
+    ├── _collapsible.scss
+    ├── _color.scss
     └── ...
 ```
 ### License
