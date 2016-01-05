@@ -80,11 +80,11 @@ scss/
 │   └── _common.scss
 ├── componentsApp
 │   └── _play.scss
-├── components
-│   ├── _buttons.scss
-│   ├── _cards.scss
-│   └── ...
-└── page
+└── components
+    ├── _buttons.scss
+    ├── _cards.scss
+    └── ...
+page
 ```
 ### License
 
