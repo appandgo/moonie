@@ -1,0 +1,45 @@
+// _COLORS HEADER
+$color-navbar:#000;
+
+// ****************************************************************
+// _NAVBAR MOONIE
+// ****************************************************************
+.nav-moonie{
+    background:$color-navbar;
+}
+// ****************************************************************
+// _STYLES HEADER TITLE
+// ****************************************************************
+.h1{
+    font-family: "nonchalance";
+    display:inline-block;
+    font-size:1.2em;
+    padding:15px 0;
+    margin:0;
+}
+
+.link{
+    color:#FFF;
+    &:hover{
+        color:#32b1e3;
+    }
+}
+
+
+.header-img{
+    background:transparent;
+    color:#FFF;
+    padding:40px;
+    padding-left:100px;
+    display:block;
+    position:fixed;
+    height:100%;
+    background-size:100%;
+    h2{
+        font-size:3em;
+    }
+    .text{
+        width:35%;
+        font-size:1.2em;
+    }
+}

@@ -23,12 +23,18 @@
    * @name  HomeCtrl
    * @description Controller
    */
-  function HomeCtrl(MovieService) {
+  function HomeCtrl(LatestMoviesService) {
     var vm = this;
-   // MovieService.getOneMovie(102899);
+   LatestMoviesService.getMovie()
+    .then(function(movie) {
+        console.log('latest Movies in directives :',movie.data);
+        vm.movies = movie.data;
+    },function(error){
+        $log.error('Error', error);
+    })
   }
 
-  angular.module('home', ['services.movie'])
+  angular.module('home', ['services.latest_movies'])
     .config(config)
     .controller('HomeCtrl', HomeCtrl);
 })();
