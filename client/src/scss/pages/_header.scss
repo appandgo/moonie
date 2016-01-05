@@ -34,12 +34,16 @@ $color-navbar:#000;
     display:block;
     position:fixed;
     height:100%;
+    width:100%;
     background-size:100%;
+    background-repeat:no-repeat;
     h2{
         font-size:3em;
     }
     .text{
+        background:rgba(76,74,75, 0.5);
         width:35%;
         font-size:1.2em;
+        padding:20px;
     }
 }
