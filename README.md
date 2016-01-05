@@ -85,6 +85,7 @@ scss/
 │   ├── _cards.scss
 │   └── ...
 └── page
+```
 ### License
 
 See LICENSE file
