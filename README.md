@@ -78,8 +78,6 @@ scss/
 │   ├── _movieGenres.scss
 │   ├── _movieSimilar.scss
 │   └── _common.scss
-├── componentsApp
-│   └── _play.scss
 └── components
     ├── _buttons.scss
     ├── _cards.scss
