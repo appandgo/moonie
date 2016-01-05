@@ -9,7 +9,7 @@
 				<div class="box" style="background-image : url(http://image.tmdb.org/t/p/w500/{{movie.backdrop_path}});">
 					<p class="genre-title"> {{movie.original_title}} </p>
 					<div class="row">
-						<play class="s6 right-align btn-rond"></play>
+						<a ui-sref="root.video({ idMovie: movie.id })"><play class="s6 right-align btn-rond"></play></a>
 						<a ui-sref="root.movieDetails({ id: movie.id })"><more class="s6 left-align"></more></a>
 					</div>
 				</div>
