@@ -1,0 +1,28 @@
+<div>
+
+	<div class="container-list">
+	<div class="row">
+		<div class="col m12" >
+			<h4>{{vm.nameGenre}}</h4>
+			<a ui-sref="root.allGenre"><span>See all genres</span></a>
+		</div>
+	</div>
+
+
+
+	<div id="movie-genre" class="row">
+
+		<div data-ng-repeat="movie in vm.movies" class="col s6 m6 l3 box-container">
+			<div class="box" style="background-image : url(http://image.tmdb.org/t/p/w500/{{movie.backdrop_path}});">
+				<p class="genre-title"> {{movie.title}} </p>
+				<div class="row">
+					<play class="s6 right-align btn-rond"></play>
+					<a ui-sref="root.movieDetails({ id: movie.id })"><more class="s6 left-align"></more></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+</div>

@@ -1,0 +1,28 @@
+<div>
+	<div class="container-list">
+		<div class="row">
+			<div class="col m12" >
+				<h4>All Genres</h4>
+			</div>
+		</div>
+
+
+		<div id="movie-genre" class="row">
+
+			<div data-ng-repeat="genre in ::vm.genres" class="col s6 m6 l3 box-container">
+
+				<div class="box">
+
+					<p class="genre-title"> {{genre.name}} </p>
+					
+					<a ui-sref="root.movieGenre({ id: genre.id, nameGenre: genre.name })">
+						<more></more>
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>

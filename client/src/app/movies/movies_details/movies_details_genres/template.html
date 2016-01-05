@@ -10,7 +10,10 @@
 				<div class="box">
 
 					<p class="genre-title"> {{genre.name}} </p>
-					<more></more>
+					
+					<a ui-sref="root.movieGenre({ id: genre.id, nameGenre: genre.name })">
+						<more></more>
+					</a>
 
 				</div>
 			</div>
