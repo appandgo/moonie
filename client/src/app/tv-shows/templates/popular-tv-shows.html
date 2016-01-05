@@ -5,12 +5,6 @@
       <h4>Séries TV les plus populaires {{selectedIem}} {{vm.selectedIem}}</h4>
     </div>
   </div>
-  <div class="row">
-    <div class="input-field col s3">
-      Trier par : <select class="browser-default" ng-model="vm.filterSelected" ng-options="filter as filter.name for filter in vm.filters">
-      </select>
-    </div>
-  </div>
 
   <div class="row">
     <div class="col s12 m3" ng-repeat="show in vm.popularTvShows | orderBy: vm.filterSelected.filter">
@@ -19,18 +13,6 @@
           <img ng-src="http://image.tmdb.org/t/p/w500{{show.backdrop_path}}">
           <span class="card-title card__title--shadow">{{show.name}}</span>
         </div>
-        <!-- <div class="card-content">
-            <div>
-            Note :
-            {{show.vote_average}} /10
-            <star-rating rating="show.vote_average"></star-rating>
-             <br>({{show.vote_count}} votes)
-            </div>
-            <p>Popularité: {{ show.popularity }}</p>
-        </div> -->
-        <!-- <div class="card-action">
-          <a href="#">Voir plus de détails</a>
-        </div> -->
       </div>
     </div>
   </div>
